@@ -23,6 +23,9 @@ class BasePage:
 
     def get_current_url(self):
         return self.driver.current_url
+    
+    def current_window_handle(self):
+        return self.driver.current_window_handle
 
     def quit(self):
         self.driver.quit()
